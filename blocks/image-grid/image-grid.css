@@ -1,0 +1,30 @@
+.image-grid-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.image-grid-grid figure {
+  margin: 0;
+}
+
+.image-grid-grid figure > div {
+  line-height: 0;
+}
+
+.image-grid-grid img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.image-grid-grid figcaption {
+  margin-top: 8px;
+}
+
+@media (width >= 900px) {
+  .image-grid-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+  }
+}
